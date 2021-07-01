@@ -33,8 +33,4 @@ void Widget::paintEvent(QPaintEvent *event)
 
 }
 
-void Widget::on_pushButton_clicked()
-{
-    this->close();
-}
 
