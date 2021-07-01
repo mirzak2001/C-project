@@ -28,12 +28,6 @@ public:
 private slots:
     void on_pushButton_clicked();
 
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_3_clicked();
-
-    void on_pushButton_4_clicked();
-
     void on_listView_clicked(const QModelIndex &index);
 
     void on_pushButton_5_clicked();
@@ -47,6 +41,8 @@ private slots:
     void on_pushButton_6_clicked();
 
     void on_actionHelp_triggered();
+
+    void on_actionQuit_triggered();
 
 private:
     Ui::MainWindow *ui;

@@ -47,27 +47,6 @@ void MainWindow::on_pushButton_clicked()
 }
 
 
-void MainWindow::on_pushButton_2_clicked()
-{
-    proxyModel->setFilterFixedString(ui->lineEdit->text());
-    ui->lineEdit->clear();
-}
-
-
-void MainWindow::on_pushButton_3_clicked()
-{
-    proxyModel->setFilterKeyColumn(5);
-    proxyModel->setFilterFixedString(ui->lineEdit->text());
-    ui->lineEdit->clear();
-}
-
-
-void MainWindow::on_pushButton_4_clicked()
-{
-    proxyModel->setFilterKeyColumn(6);
-    proxyModel->setFilterFixedString(ui->lineEdit->text());
-    ui->lineEdit->clear();
-}
 
 
 void MainWindow::on_listView_clicked(const QModelIndex &index)
@@ -133,5 +112,11 @@ void MainWindow::on_actionHelp_triggered()
 {
     widget = new Widget (this);
     widget->show();
+}
+
+
+void MainWindow::on_actionQuit_triggered()
+{
+    QApplication::quit();
 }
 
